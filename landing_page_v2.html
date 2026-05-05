@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bookkeeping for New Businesses in Volusia County | DeBary Consulting</title>
+  <meta name="description" content="DeBary Consulting provides bookkeeping and accounting services for new businesses and startups in Volusia County, FL. Start smart. Stay organized. Grow confidently."/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; background: #fff; }
+
+    /* NAV */
+    nav {
+      background: #00007e;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo { color: #fff; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.5px; }
+    nav .logo span { color: #73b8c7; }
+    nav a.nav-cta {
+      background: #73b8c7;
+      color: #00007e;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+      background: #00007e;
+      color: #fff;
+      padding: 80px 40px 70px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      max-width: 720px;
+      margin: 0 auto 16px;
+    }
+    .hero h1 span { color: #73b8c7; }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 580px;
+      margin: 0 auto 32px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: #73b8c7;
+      color: #00007e;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 16px 40px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .hero-sub {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* PAIN POINTS */
+    .pain {
+      background: #f7f9fc;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .pain h2 { font-size: 1.9rem; color: #00007e; margin-bottom: 12px; }
+    .pain p { font-size: 1.05rem; color: #444; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
+    .pain-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pain-card {
+      background: #fff;
+      border-left: 4px solid #73b8c7;
+      border-radius: 6px;
+      padding: 24px 28px;
+      width: 260px;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .pain-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .pain-card p { font-size: 0.97rem; color: #333; line-height: 1.5; }
+
+    /* SERVICES */
+    .services {
+      padding: 60px 40px;
+      text-align: center;
+      background: #fff;
+    }
+    .services h2 { font-size: 1.9rem; color: #00007e; margin-bottom: 10px; }
+    .services .sub { font-size: 1.05rem; color: #555; margin-bottom: 40px; }
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #f7f9fc;
+      border-radius: 8px;
+      padding: 28px 24px;
+      width: 210px;
+      text-align: center;
+    }
+    .service-card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .service-card h3 { font-size: 1rem; color: #00007e; margin-bottom: 8px; font-weight: 700; }
+    .service-card p { font-size: 0.88rem; color: #555; line-height: 1.5; }
+
+    /* WHY */
+    .why {
+      background: #00007e;
+      color: #fff;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .why h2 { font-size: 1.9rem; margin-bottom: 10px; }
+    .why .sub { font-size: 1.05rem; opacity: 0.85; max-width: 560px; margin: 0 auto 40px; }
+    .why-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(115,184,199,0.4);
+      border-radius: 8px;
+      padding: 24px;
+      width: 250px;
+      text-align: left;
+    }
+    .why-card h3 { color: #73b8c7; font-size: 1rem; margin-bottom: 8px; }
+    .why-card p { font-size: 0.9rem; opacity: 0.85; line-height: 1.5; }
+
+    /* SOCIAL PROOF */
+    .proof {
+      background: #f7f9fc;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .proof h2 { font-size: 1.9rem; color: #00007e; margin-bottom: 40px; }
+    .proof-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .proof-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 28px;
+      width: 260px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      text-align: left;
+    }
+    .proof-card p { font-size: 0.95rem; color: #333; line-height: 1.6; font-style: italic; margin-bottom: 16px; }
+    .proof-card .author { font-size: 0.85rem; font-weight: 700; color: #00007e; }
+
+    /* CTA FORM */
+    .cta-section {
+      background: #fff;
+      padding: 70px 40px;
+      text-align: center;
+    }
+    .cta-section h2 { font-size: 2rem; color: #00007e; margin-bottom: 10px; }
+    .cta-section p { font-size: 1.05rem; color: #555; max-width: 500px; margin: 0 auto 36px; line-height: 1.6; }
+    .cta-form {
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .cta-form input, .cta-form select, .cta-form textarea {
+      padding: 14px 16px;
+      border: 1.5px solid #ccd6e0;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #1a1a2e;
+      width: 100%;
+    }
+    .cta-form textarea { height: 100px; resize: vertical; }
+    .cta-form button {
+      background: #00007e;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cta-form button:hover { background: #0000a0; }
+    .form-note { font-size: 0.85rem; color: #888; margin-top: 8px; }
+
+    /* FOOTER */
+    footer {
+      background: #00007e;
+      color: #fff;
+      text-align: center;
+      padding: 28px 40px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+    footer a { color: #73b8c7; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.9rem; }
+      .pain-card, .service-card, .why-card, .proof-card { width: 100%; max-width: 340px; }
+      nav { padding: 14px 20px; }
+      .hero, .pain, .services, .why, .proof, .cta-section { padding: 50px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">DeBary<span>Consulting</span></div>
+  <a href="#contact" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Bookkeeping &amp; Accounting for <span>New Businesses</span> in Volusia County</h1>
+  <p>You started a business to do what you love — not to spend nights staring at spreadsheets. Let us handle the books so you can focus on growing.</p>
+  <a href="#contact" class="hero-cta">Get a Free Consultation</a>
+  <p class="hero-sub">No commitment. Response within 1 business day.</p>
+</section>
+
+<!-- PAIN POINTS -->
+<section class="pain">
+  <h2>Sound familiar?</h2>
+  <p>Most new business owners hit the same wall when it comes to finances. We solve these problems every day.</p>
+  <div class="pain-grid">
+    <div class="pain-card">
+      <div class="icon">📚</div>
+      <p>"My books are behind and I don't know where to start."</p>
+    </div>
+    <div class="pain-card">
+      <div class="icon">🧾</div>
+      <p>"I'm mixing personal and business expenses and it's getting messy."</p>
+    </div>
+    <div class="pain-card">
+      <div class="icon">💸</div>
+      <p>"Tax season stresses me out because I'm never prepared."</p>
+    </div>
+    <div class="pain-card">
+      <div class="icon">⏱️</div>
+      <p>"I spend too much time on bookkeeping instead of running my business."</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>What We Do</h2>
+  <p class="sub">Practical financial services built for new and growing businesses in Central Florida.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">📒</div>
+      <h3>Monthly Bookkeeping</h3>
+      <p>Clean books, reconciled accounts, and monthly financial statements every month.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📊</div>
+      <h3>Financial Reporting</h3>
+      <p>Profit &amp; loss, balance sheet, and cash flow reports you can actually understand.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">🧮</div>
+      <h3>QuickBooks Setup</h3>
+      <p>Get set up the right way from day one — or let us clean up what's already there.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📁</div>
+      <h3>Catch-Up Bookkeeping</h3>
+      <p>Behind on your books? We'll get you current fast, no judgment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DEBARY -->
+<section class="why">
+  <h2>Why DeBary Consulting?</h2>
+  <p class="sub">We're not a national firm or a faceless portal. We're your local neighbor in DeBary, and we care about your numbers the way you do.</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>📍 Locally Based</h3>
+      <p>Based in DeBary, FL — available by phone, email, or in person. Not just a ticket system.</p>
+    </div>
+    <div class="why-card">
+      <h3>🎓 Real Expertise</h3>
+      <p>Backed by real accounting fundamentals, not just software. We understand the why behind the numbers.</p>
+    </div>
+    <div class="why-card">
+      <h3>📈 Built to Scale</h3>
+      <p>Start with bookkeeping, add tax prep or advisory as your business grows.</p>
+    </div>
+    <div class="why-card">
+      <h3>💻 Modern Tools</h3>
+      <p>QuickBooks Online, Xero, and real-time dashboards — not month-old spreadsheets.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF placeholder -->
+<section class="proof">
+  <h2>What Clients Are Saying</h2>
+  <div class="proof-grid">
+    <div class="proof-card">
+      <p>"Finally feel in control of my finances. I had no idea my books were such a mess until DeBary Consulting cleaned everything up."</p>
+      <div class="author">— Local Business Owner, DeBary FL</div>
+    </div>
+    <div class="proof-card">
+      <p>"Jim set up our QuickBooks from scratch and walked me through everything. Tax season was a breeze this year for the first time."</p>
+      <div class="author">— Startup Founder, Volusia County FL</div>
+    </div>
+    <div class="proof-card">
+      <p>"Responsive, professional, and actually explains the numbers in plain English. Highly recommend for any new business owner."</p>
+      <div class="author">— Small Business Owner, Central Florida</div>
+    </div>
+  </div>
+</section>
+
+<!-- CALENDLY EMBED -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<section class="cta-section" id="contact">
+  <h2>Book Your Free Consultation</h2>
+  <p>Pick a time that works for you. It's free, no commitment, and we'll respond to any questions within one business day.</p>
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/jim-pappalardo/consult-intro?hide_gdpr_banner=1&primary_color=00007e"
+       style="min-width:320px;height:700px;max-width:900px;margin:0 auto;display:block;border-radius:8px;overflow:hidden;">
+  </div>
+  <p class="form-note" style="margin-top:24px;">Prefer email? Reach us at <a href="mailto:info@debaryconsulting.com" style="color:#00007e;">info@debaryconsulting.com</a> &nbsp;·&nbsp; 386-845-3800</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 DeBary Consulting &nbsp;|&nbsp; A Division of Pappalardo Consulting &nbsp;|&nbsp; DeBary, FL &nbsp;|&nbsp; <a href="https://debaryconsulting.com">DeBaryConsulting.com</a></p>
+</footer>
+
+</body>
+</html>
